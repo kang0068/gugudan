@@ -12,9 +12,24 @@ public class gugudan {
 //		}
 		
 		//input
-		System.out.println("input : ");
-		Scanner scanner = new Scanner(System.in);
-		int a = scanner.nextInt();
+//		System.out.println("input : ");
+//		Scanner scanner = new Scanner(System.in);
+//		int a = scanner.nextInt();
+//		if(a<2 || a>9){
+//			System.out.println("wrong number");
+//		}else{
+//			for(int i=1; i<10; i++){
+//				System.out.println(a+" x "+i+" = "+a*i);
+//			}
+//		}
+		
+		//method
+		gugudan g = new gugudan();
+		int a = g.input();
+		g.print(a);
+	}
+	
+	public void print(int a){
 		if(a<2 || a>9){
 			System.out.println("wrong number");
 		}else{
@@ -22,5 +37,12 @@ public class gugudan {
 				System.out.println(a+" x "+i+" = "+a*i);
 			}
 		}
+	}
+	
+	public int input(){
+		System.out.println("input : ");
+		Scanner scanner = new Scanner(System.in);
+		int a = scanner.nextInt();
+		return a;
 	}
 }
